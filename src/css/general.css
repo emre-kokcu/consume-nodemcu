@@ -1,0 +1,68 @@
+@keyframes connectedmv {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgb(47, 230, 47);
+  }
+}
+
+@keyframes non-connectedmv {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgb(230, 0, 0);
+  }
+}
+
+@keyframes connecting {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: grey;
+  }
+}
+
+.custom-table {
+  margin-bottom: 70px;
+}
+
+body {
+  background-image: url("../img/bg_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.connected {
+  animation: connectedmv 0.7s infinite;
+}
+
+.non-connected {
+  animation: non-connectedmv 1s infinite;
+}
+
+.connecting {
+  animation: connecting 0.3s infinite;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.left {
+  float: left;
+}
+
+div.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  border: none;
+  background-color: rgba(238, 238, 238, 0.3);
+}
